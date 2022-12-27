@@ -42,7 +42,7 @@ li.home {
     width: 240px;
     height: 100%;
     padding: 20px 10px;
-    background-color: #757575;
+    background-color: rgba(117, 117, 117, 0.7);
     border-bottom-right-radius: 30px;
     border-top-right-radius: 30px;
     display: inline-block;
@@ -153,4 +153,75 @@ button {
 
 .w-btn-outline:active {
     transform: scale(1.5);
+}
+
+footer {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f8e2df;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
+    box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+#wrap {
+    min-height: 100%;
+    position: relative;
+    width: 100%
+}
+
+footer {
+    width: 60%;
+    height: 40%;
+    bottom: 0px;
+    position: absolute;
+    left: 20%;
+}
+
+section {
+    padding-bottom: 110px;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#answer {
+    text-align: center;
+}
+
+.answerzone {
+    width: 70px;
+    height: 70px;
+    background: #1e6b7b;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+#answers {
+    overflow: scroll;
+}
+
+#score {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }

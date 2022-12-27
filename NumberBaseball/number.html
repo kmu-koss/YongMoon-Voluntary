@@ -14,28 +14,100 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="./number.css" />
+        <link rel="stylesheet" href="./winModal.css" />
     </head>
     <body>
-        <ul class="sidebar">
-            <li class="home">숫자야구</li>
-            <div class="content"></div>
-        </ul>
+        <div id="wrap">
+            <section>
+                <nav>
+                    <ul class="sidebar">
+                        <li class="home">숫자야구</li>
+                        <div class="content"></div>
+                    </ul>
+                </nav>
+            </section>
 
-        <div class="main">
-            <h1>숫자 야구 게임</h1>
-            <br /><br />
-            <div class="result">
-                <div class="dropzone" id="list1"></div>
-                <div class="dropzone" id="list2"></div>
-                <div class="dropzone" id="list3"></div>
-                <div class="dropzone" id="list4"></div>
-                <br>
-                <button class="w-btn w-btn-indigo" type="button" onclick="result()">
-                    RESULT
-                </button>
+            <div class="main">
+                <h1>숫자 야구 게임</h1>
+                <br /><br />
+                <div class="result">
+                    <div class="dropzone" id="list1"></div>
+                    <div class="dropzone" id="list2"></div>
+                    <div class="dropzone" id="list3"></div>
+                    <div class="dropzone" id="list4"></div>
+                    <br />
+                    <button
+                        class="w-btn w-btn-indigo"
+                        type="button"
+                        onclick="result()"
+                    >
+                        RESULT
+                    </button>
+                </div>
             </div>
 
-            
+            <div id="modal" class="modal-overlay">
+                <div class="modal-window">
+                    <div class="title">
+                        <h2>정답!</h2>
+                    </div>
+                    <div class="close-area">다시하기</div>
+                    <div class="content">
+                        <p>시도횟수 : <span id="try">0</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <h3>&nbsp;&nbsp;&nbsp;답안지</h3>
+                <div id="answers">
+                    <!-- <div id="answer">
+                        <div class="answerzone">
+                            <img
+                                src="img/1.png"
+                                draggable="true"
+                                ondragstart="drag(event)"
+                                id="1"
+                                width="70"
+                                height="70"
+                            />
+                        </div>
+                        <div class="answerzone">
+                            <img
+                                src="img/1.png"
+                                draggable="true"
+                                ondragstart="drag(event)"
+                                id="1"
+                                width="70"
+                                height="70"
+                            />
+                        </div>
+                        <div class="answerzone">
+                            <img
+                                src="img/1.png"
+                                draggable="true"
+                                ondragstart="drag(event)"
+                                id="1"
+                                width="70"
+                                height="70"
+                            />
+                        </div>
+                        <div class="answerzone">
+                            <img
+                                src="img/1.png"
+                                draggable="true"
+                                ondragstart="drag(event)"
+                                id="image"
+                                width="70"
+                                height="70"
+                            />
+                        </div>
+                        <div>
+                            <span>스트라이크: 0</span>
+                            <span>, 볼 : 3</span>
+                        </div> -->
+                    </div>
+            </footer>
         </div>
     </body>
 
@@ -56,4 +128,5 @@
 
     <script src="number.js"></script>
     <script src="function.js"></script>
+    <script src="winModal.js"></script>
 </html>
