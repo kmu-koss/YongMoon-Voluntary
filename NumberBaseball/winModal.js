@@ -18,10 +18,3 @@ closeBtn.addEventListener("click", (e) => {
     modalOff();
     location.reload();
 });
-
-modal.addEventListener("click", (e) => {
-    const evTarget = e.target;
-    if (evTarget.classList.contains("modal-overlay")) {
-        modalOff();
-    }
-});

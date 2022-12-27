@@ -1,4 +1,5 @@
 const ANSWER = [];
+const ANSWERS = [];
 var tryCount = 0;
 
 const Answer = () => {
@@ -37,6 +38,20 @@ checkAnswer = (ballList) => {
     ball = checkStrikeBall(ballList);
     if (ball.strike == 4) {
         document.getElementById("modal").style.display = "flex";
+    }
+    let savingBallList = {
+        balls: ballList,
+        strike: ball.strike,
+        ball: ball.ball,
+    };
+
+    if (!isBallInANSWERS(savingBallList)) {
+        tryCount++;
+        document.getElementById("try").innerText = tryCount;
+        ANSWERS.push(savingBallList);
+        console.log(ANSWERS);
+    } else {
+        alert("이미 한번 제출하신 볼입니다!");
     }
 };
 //-------------------- main code --------------------
@@ -82,8 +97,6 @@ const checkStrike = (ballList) => {
             strikeCount++;
         }
     }
-    tryCount++;
-    document.getElementById('try').innerText = tryCount
     return strikeCount;
 };
 
@@ -96,4 +109,13 @@ const checkBall = (ballList, strikeCount) => {
         }
     }
     return ballCount - strikeCount;
+};
+
+const isBallInANSWERS = (savingBallList) => {
+    for (i = 0; i < ANSWERS.length; i++){
+        if (JSON.stringify(ANSWERS[i]).includes(JSON.stringify(savingBallList))){
+            return true
+        }
+    }
+    return false
 };
