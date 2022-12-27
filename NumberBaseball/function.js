@@ -1,4 +1,5 @@
 const ANSWER = [];
+var tryCount = 0;
 
 const Answer = () => {
     getRandomAnswerList();
@@ -33,7 +34,10 @@ function result() {
     }
 }
 checkAnswer = (ballList) => {
-    checkStrikeBall(ballList);
+    ball = checkStrikeBall(ballList);
+    if (ball.strike == 4) {
+        document.getElementById("modal").style.display = "flex";
+    }
 };
 //-------------------- main code --------------------
 
@@ -67,7 +71,8 @@ const isAllBallExist = (ballList) => {
 const checkStrikeBall = (ballList) => {
     let strikeCount = checkStrike(ballList);
     let ballCount = checkBall(ballList, strikeCount);
-    console.log("스트라이크: " + strikeCount + ", 볼: " + ballCount)
+    console.log("스트라이크: " + strikeCount + ", 볼: " + ballCount);
+    return { strike: strikeCount, ball: ballCount };
 };
 
 const checkStrike = (ballList) => {
@@ -77,6 +82,8 @@ const checkStrike = (ballList) => {
             strikeCount++;
         }
     }
+    tryCount++;
+    document.getElementById('try').innerText = tryCount
     return strikeCount;
 };
 

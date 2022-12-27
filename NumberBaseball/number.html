@@ -14,6 +14,7 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="./number.css" />
+        <link rel="stylesheet" href="./winModal.css" />
     </head>
     <body>
         <ul class="sidebar">
@@ -29,13 +30,27 @@
                 <div class="dropzone" id="list2"></div>
                 <div class="dropzone" id="list3"></div>
                 <div class="dropzone" id="list4"></div>
-                <br>
-                <button class="w-btn w-btn-indigo" type="button" onclick="result()">
+                <br />
+                <button
+                    class="w-btn w-btn-indigo"
+                    type="button"
+                    onclick="result()"
+                >
                     RESULT
                 </button>
             </div>
+        </div>
 
-            
+        <div id="modal" class="modal-overlay">
+            <div class="modal-window">
+                <div class="title">
+                    <h2>정답!</h2>
+                </div>
+                <div class="close-area">다시하기</div>
+                <div class="content">
+                    <p>시도횟수 : <span id="try">0</span></p>
+                </div>
+            </div>
         </div>
     </body>
 
@@ -56,4 +71,5 @@
 
     <script src="number.js"></script>
     <script src="function.js"></script>
+    <script src="winModal.js"></script>
 </html>
