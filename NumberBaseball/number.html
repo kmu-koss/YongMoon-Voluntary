@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>숫자야구</title>
+        <link
+            href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./number.css" />
+    </head>
+    <body>
+        <ul class="sidebar">
+            <li class="home">숫자야구</li>
+            <div class="content"></div>
+        </ul>
+
+        <div class="main">
+            <h1>숫자 야구 게임</h1>
+            <br /><br />
+            <div class="result">
+                <div class="dropzone" id="list1"></div>
+                <div class="dropzone" id="list2"></div>
+                <div class="dropzone" id="list3"></div>
+                <div class="dropzone" id="list4"></div>
+                <br>
+                <button class="w-btn w-btn-indigo" type="button" onclick="result()">
+                    RESULT
+                </button>
+            </div>
+
+            
+        </div>
+    </body>
+
+    <script id="dragged-item-template" type="text/template">
+        <div class="dropzone">
+            <div id="draggable" draggable="true" class="{num}_select">
+                <img
+                    src="img/{imgnum}.png"
+                    draggable="true"
+                    ondragstart="drag(event)"
+                    id="{id}"
+                    width="70"
+                    height="70"
+                />
+            </div>
+        </div>
+    </script>
+
+    <script src="number.js"></script>
+    <script src="function.js"></script>
+</html>

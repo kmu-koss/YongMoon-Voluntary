@@ -1,0 +1,156 @@
+ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    width: 100px;
+    background: #ff6347;
+    height: 100%;
+    overflow: auto;
+    position: fixed;
+}
+
+li.home {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    color: #000;
+    font-weight: bold;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.sidebar {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 240px;
+    height: 100%;
+    padding: 20px 10px;
+    background-color: #757575;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main {
+    position: fixed;
+    left: 280px;
+    text-align: center;
+    display: contents;
+}
+
+body {
+    /* 사용자가 예제의 텍스트를 선택하지 못하도록 */
+    user-select: none;
+}
+
+#draggable {
+    text-align: center;
+}
+
+.dropzone {
+    width: 70px;
+    height: 70px;
+    background: rgb(255, 255, 255);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.dropzone.dragover {
+    background-color: #494949;
+}
+
+.dragging {
+    opacity: 0.5;
+}
+
+body {
+    background-color: #a4a4a4;
+}
+
+.result {
+    text-align: center;
+}
+
+button {
+    margin: 20px;
+}
+
+.w-btn {
+    position: relative;
+    border: none;
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 15px;
+    font-family: "paybooc-Light", sans-serif;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+.w-btn-outline {
+    position: relative;
+    padding: 15px 30px;
+    border-radius: 15px;
+    font-family: "paybooc-Light", sans-serif;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+.w-btn-indigo {
+    background-color: aliceblue;
+    color: #1e6b7b;
+}
+
+.w-btn-indigo-outline {
+    border: 3px solid aliceblue;
+    color: #1e6b7b;
+}
+
+.w-btn-indigo-outline:hover {
+    color: #1e6b7b;
+    background: aliceblue;
+}
+
+.w-btn:hover {
+    letter-spacing: 2px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.w-btn-outline:hover {
+    letter-spacing: 2px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.w-btn:active {
+    transform: scale(1.5);
+}
+
+.w-btn-outline:active {
+    transform: scale(1.5);
+}
