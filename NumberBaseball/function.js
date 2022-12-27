@@ -49,6 +49,7 @@ checkAnswer = (ballList) => {
         tryCount++;
         document.getElementById("try").innerText = tryCount;
         ANSWERS.push(savingBallList);
+        addLog(savingBallList);
         console.log(ANSWERS);
     } else {
         alert("이미 한번 제출하신 볼입니다!");
@@ -112,10 +113,32 @@ const checkBall = (ballList, strikeCount) => {
 };
 
 const isBallInANSWERS = (savingBallList) => {
-    for (i = 0; i < ANSWERS.length; i++){
-        if (JSON.stringify(ANSWERS[i]).includes(JSON.stringify(savingBallList))){
-            return true
+    for (i = 0; i < ANSWERS.length; i++) {
+        if (
+            JSON.stringify(ANSWERS[i]).includes(JSON.stringify(savingBallList))
+        ) {
+            return true;
         }
     }
-    return false
+    return false;
+};
+
+const addLog = (savingBallList) => {
+    let addHTML = `<div id="answer">`;
+    for (i = 0; i < 4; i++) {
+        addHTML += `<div class="answerzone">
+        <img
+            src="img/`+ savingBallList.balls[i] + `.png"
+            id="image"
+            width="70"
+            height="70"
+        />
+        </div>`;
+    }
+
+    addHTML += `<div><span>스트라이크: ` + savingBallList.strike;
+    addHTML +=
+        `</span><span>, 볼: ` + savingBallList.ball + `</span></div></div>`;
+
+    document.getElementById("answers").innerHTML = addHTML + document.getElementById("answers").innerHTML;
 };
