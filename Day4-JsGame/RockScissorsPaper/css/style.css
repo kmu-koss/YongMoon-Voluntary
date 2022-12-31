@@ -1,0 +1,41 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.item {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    width: 100%;
+    height: 100%;
+    text-align: 100%;
+    grid-column: 1/7;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blank {
+    width: 100%;
+    height: 30px;
+    text-align: 100%;
+    grid-column: 1/7;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
