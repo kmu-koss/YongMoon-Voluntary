@@ -1,26 +1,64 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>가위 바위 보</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-    <div class="container">
-        <span class="blank"></span>
-        <span class="title">가위-바위-보</span>
-        <span class="blank"></span>
-        <span class="item">2</span>
-        <span class="item">3</span>
-        <span class="item", id="card-wrapper">4</span>
-        <span class="item">5</span>
-        <span class="item">6</span>
-        <span class="item">7</span>
-      </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>가위바위보</title>
+    </head>
 
+    <body>
+        <div class="container">
+            <div class="card" id="counter">
+                <div class="front">
+                    <span class="logo">
+                        <img
+                            src="img/가위바위보.png"
+                            style="width: 90px; margin: auto"
+                        />
+                    </span>
+                </div>
+                <div class="back">
+                    <span>
+                        <img
+                            src="img/가위.png"
+                            style="width: 90px; margin: auto"
+                            id="answer"
+                        />
+                    </span>
+                </div>
+            </div>
+            <div class="computer">Computer</div>
+            <div class="countdown">Ready</div>
+            <div class="me">Your</div>
+            <div class="select">
+                <div class="card2" id="가위">
+                    <div class="back2">
+                        <img
+                            src="img/가위.png"
+                            style="width: 90px; margin: auto"
+                        />
+                    </div>
+                </div>
+                <div class="card2" id="바위">
+                    <div class="back2">
+                        <img
+                            src="img/주먹.png"
+                            style="width: 90px; margin: auto"
+                        />
+                    </div>
+                </div>
+                <div class="card2" id="보">
+                    <div class="back2">
+                        <img
+                            src="img/보자기.png"
+                            style="width: 90px; margin: auto"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
     <script src="function.js"></script>
-</body>
 </html>
