@@ -9,12 +9,14 @@
 3. 새 길을 만들 때마다 스택에 저장하고, 다시 백트랙킹 할 때마다 스택에서 빼면서 진행하면 
 자동으로 전 구역을 스캔한 후 최초 지점으로 돌아오고 스택은 제로가 되며 알고리즘이 종료됨.
 
+! x, y 좌표가 모두 홀수인 칸에서 오른쪽 혹은 아래 둘 중 하나를 뚫는 알고리즘 !
+
 */
 
 
 var tc = 21; // tile count (무조건 홀수)
 var gs = 20; // 미로 사이즈 grid size
-var field; // map position array which value is 0 for wall, 1~2 for way // 미로 벽에 대해 값이 0인 맵 위치 배열
+var field; // 미로 벽에 대해 값이 0인 맵 위치 배열
 var px = py = 1; // 0 < =  px,py < tc
 var xv = yv = 0;
 var tracker;
@@ -68,9 +70,8 @@ function initialize(){
 	randomMazeGenerator();
 	
 	cx = 0; cy = 1;
-	// 빨간 점 위치 상시 바뀜
 	ctx.fillStyle = "red";
-	ctx.fillRect(cx*gs, cy*gs, gs, gs);
+	ctx.fillRect(cx*gs, cy*gs, gs, gs); // 빨간 점 위치 상시 바뀜
 	
 }
 
@@ -141,7 +142,7 @@ function randomMazeGenerator(){
 	}			
 }
 
-
+// tracking : 객체 탐지, 추적
 function tracking(){
 	
 	/* Random Move */
