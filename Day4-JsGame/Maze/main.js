@@ -34,7 +34,7 @@ window.onload = function(){
 // enter 키를 눌렀다가 땠을 때 이벤트
 function enterkey() {
     if (window.event.keyCode == 13) { // enter 키의 아스키 코드 : 13, 엔터를 누르면
-    	var sizeInput = document.getElementById("sizeInput").value; // sizeInput Id 찾기
+    	var sizeInput = document.getElementById("mazeSize").value; // mazeSize Id 찾기
     	if(sizeInput % 2 == 0){
     		alert("Please enter an odd number."); // 미로의 길이가 홀수여야해서
     	} else {
@@ -46,7 +46,7 @@ function enterkey() {
 
 
 function initialize(){
-	document.getElementById("sizeInput").value = tc;
+	document.getElementById("mazeSize").value = tc;
 	make2DArray();
 	
 	ctx.fillStyle = "black"; // 캔버스의 스타일 지정
