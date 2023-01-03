@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8" />
         <title>Random Maze Generator</title>
         <script src="main.js"></script>
+        <link rel="stylesheet" href="style.css" />
     </head>
 
     <body>
-        <canvas id="maze"></canvas>
+        <div class="container">
+            <canvas id="maze"></canvas>
 
-        <br/>
-        <br/>
+            <br />
+            <br />
 
-        Maze Size : <input type="text" id="mazeSize" onkeyup="enterkey();"/> 
-        <!-- onkeyup : 키를 눌렀다가 땠을 때 이벤트 (onkeydown 에서 인식하는 키들을 인식) -->
+            Maze Size :
+            <input type="text" id="mazeSize" onkeyup="enterkey();" />
+            <!-- onkeyup : 키를 눌렀다가 땠을 때 이벤트 (onkeydown 에서 인식하는 키들을 인식) -->
 
-        <br/>
-        <br/>
+            <br />
+            <br />
 
-        <label id="text"></label>
-
+            <label id="text"></label>
+        </div>
     </body>
 </html>
