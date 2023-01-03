@@ -118,8 +118,16 @@ const judge = (answer, submit) => {
     if (submit == answer) {
         return "Draw";
     } else if (submit * answer == 0) {
-        return "Lose";
+        if (submit < answer){
+            return "Lose";
+        } else {
+            return "Win"
+        }
     } else {
-        return "Win";
+        if (answer < submit){
+            return "Lose";
+        } else {
+            return "Win"
+        }
     }
 };
