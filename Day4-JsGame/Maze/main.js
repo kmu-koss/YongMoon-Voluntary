@@ -83,16 +83,16 @@ function makeWay(xx,yy){
 // 방향 키 이벤트
 function keyPush(evt){
 	switch(evt.keyCode){
-	case 37: // 왼쪽 화살표 키
+	case 37: // 왼쪽 화살표 키 아스키 코드
 		xv = -1; yv = 0;
 		break;
-	case 38: // 위쪽 화살표 키
+	case 38: // 위쪽 화살표 키 아스키 코드
 		xv = 0; yv = -1;
 		break;
-	case 39: // 오른쪽 화살표 키
+	case 39: // 오른쪽 화살표 키 아스키 코드
 		xv = 1; yv = 0;
 		break;
-	case 40: // 아래쪽 화살표 키
+	case 40: // 아래쪽 화살표 키 아스키 코드
 		xv = 0; yv = 1;
 		break;
 	}
