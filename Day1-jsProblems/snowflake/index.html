@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="snowflake"></div>
+  </body>
+  <script>
+    const body = document.querySelector("body");
+    const MIN_DURATION = 10;
+
+    function makeSnowflake() {
+      const snowflake = document.createElement("div");
+      const delay = Math.random() * 10;
+      const initialOpacity = Math.random();
+      const duration = Math.random() * 20 + MIN_DURATION;
+
+      snowflake.classList.add("snowflake");
+      snowflake.style.left = `${Math.random() * window.screen.width}px`;
+      snowflake.style.animationDelay = `${delay}s`;
+      snowflake.style.opacity = initialOpacity;
+      snowflake.style.animation = `fall ${duration}s linear`;
+
+      body.appendChild(snowflake);
+      
+      setTimeout(() => {
+        body.removeChild(snowflake);
+        makeSnowflake();
+      }, (duration + delay) * 1000);
+    }
+
+    makeSnowflake();
+    for (let idx = 0; idx < 50; idx++) {
+        setTimeout(makeSnowflake, 500 * idx);
+    }
+    
+  </script>
+</html>

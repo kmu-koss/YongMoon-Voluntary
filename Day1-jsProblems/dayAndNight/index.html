@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <img class="sphere" src="./sun.png" />
+      <button class="switchBtn">night</button>
+    </div>
+  </body>
+  <script>
+    let state = "day";
+    const sky = document.querySelector("body");
+    const sphere = document.querySelector(".sphere");
+    const switchBtn = document.querySelector(".switchBtn");
+    function switchclick() {
+      if (state === "day") {
+        state = "night";
+        sphere.src = "./moon.png";
+        sky.style.background = "#404040";
+      } else {
+        state = "day";
+        sphere.src = "./sun.png";
+        sky.style.background = "#00e1ff";
+      }
+      sphere.innerText = state;
+      switchBtn.innerText = state;
+      console.log(state);
+    }
+    switchBtn.addEventListener("click", switchclick);
+  </script>
+</html>
