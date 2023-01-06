@@ -135,7 +135,7 @@ function randomMazeGenerator(){
      * 길이 막혔을 때, 안 막혔을 때의 함수 호출
      */
 
-    // while(stack.length > 0) {}
+    // while(stack.length > 0) { 이 안에 코드 넣으시오. }
 
 		
 }
