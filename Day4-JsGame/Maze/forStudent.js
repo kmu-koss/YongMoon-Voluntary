@@ -105,7 +105,7 @@ function keyPush(evt){
 		ctx.fillRect(cx*gs, cy*gs, gs, gs);
 		ctx.fillStyle="white";
 		ctx.fillRect((cx-xv)*gs, (cy-yv)*gs, gs, gs);
-		document.getElementById("text").innerHTML = "cx: " + cx + " cy: " + cy; // element 안의 HTML이나 XML 가져옴
+		document.getElementById("text").innerHTML = "cx: " + cx + " cy: " + cy; // element 안의 HTML이나 XML 가져옴, 웹 상에 좌표 나타내줌
 
         /* 
          * 도착 지점에 도달했을 때, "You Win!"이라는 경고 메시지 생성, 게임 리셋

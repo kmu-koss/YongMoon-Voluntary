@@ -108,7 +108,7 @@ function keyPush(evt){
 		ctx.fillRect(cx*gs, cy*gs, gs, gs);
 		ctx.fillStyle="white";
 		ctx.fillRect((cx-xv)*gs, (cy-yv)*gs, gs, gs);
-		document.getElementById("text").innerHTML = "cx: " + cx + " cy: " + cy; // element 안의 HTML이나 XML을 가져옵니다.
+		document.getElementById("text").innerHTML = "cx: " + cx + " cy: " + cy; // element 안의 HTML이나 XML을 가져옴, 웹 상에 좌표 나타내줌
 
 		if(cx == tc-1 && cy == tc-2){ // 내 위치가 도착 지점과 같을 때, 도착 지점은 항상 오른쪽 아래
 			alert("You Win!"); // 경고창 메시지 띄우고
