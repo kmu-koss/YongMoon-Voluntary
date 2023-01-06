@@ -71,7 +71,7 @@ function initialize(){
 	
 	cx = 0; cy = 1;
 	ctx.fillStyle = "red";
-	ctx.fillRect(cx*gs, cy*gs, gs, gs); // 빨간 점 위치 상시 바뀜
+	ctx.fillRect(cx*gs, cy*gs, gs, gs); // 맨 처음 빨간 점 위치
 	
 }
 
