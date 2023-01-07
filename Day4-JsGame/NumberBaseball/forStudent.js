@@ -119,14 +119,6 @@ const checkBall = (ballList, strikeCount) => { // ballList의 제출된 ball들�
      * 이렇게 몇 볼인지 구하는 함수를 만드세요!
      * return 타입은 정수형인 INT 타입입니다! 스트라이크가 몇개인지 리턴하세요! 
      */
-    let setBallList = new Set(ballList);
-    let ballCount = 0;
-    for (i = 0; i < 4; i++) {
-        if (setBallList.has(String(ANSWER[i]))) {
-            ballCount++;
-        }
-    }
-    return ballCount - strikeCount;
 };
 
 const isBallInANSWERSHEET = (savingBallList) => { // 공들이 이전에 있었던 조합으로 제출되었나 확인하는 함수
