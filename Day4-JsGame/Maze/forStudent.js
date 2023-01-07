@@ -36,9 +36,8 @@ window.onload = function(){
 // enter 키를 눌렀다가 땠을 때 이벤트
 function enterkey() {
     if (window.event.keyCode == 13) { // enter 키의 아스키 코드 : 13, 엔터를 누르면
-
+	var sizeInput = document.getElementById("mazeSize").value; // mazeSize Id 찾기
         /*
-         * mazesize라는 ID에 의해 구분되는 element의 값을 가져오는 sizeInput변수 생성
          * 미로 사이즈가 짝수면 "Please enter an odd number." 경고 메시지 생성
          * 미로 사이즈가 홀수면 미로의 사이즈를 타일의 갯수 변수에 저장, 게임 시작   
          */     
