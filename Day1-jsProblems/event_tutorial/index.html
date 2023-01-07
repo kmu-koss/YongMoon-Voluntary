@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>이벤트란</title>
+  </head>
+  <body>
+    <main>
+      <div class="grp">
+        <h2>누르면 alert가 나오는 버튼</h2>
+        <!-- 이벤트 객체 -->
+        <input type="button" value="버튼" />
+      </div>
+    </main>
+  </body>
+  <script>
+    // 이벤트 객체
+    const inputBtn = document.querySelector("input");
+    
+    // 이벤트 핸들러
+    function alert_() {
+      alert("click");
+    }
+
+    // 이벤트 객체와 이벤트 핸들러를 연결
+    inputBtn.addEventListener("click", alert_);
+  </script>
+</html>

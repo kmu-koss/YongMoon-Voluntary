@@ -9,7 +9,7 @@
 3. 새 길을 만들 때마다 스택에 저장하고, 다시 백트랙킹 할 때마다 스택에서 빼면서 진행하면 
 자동으로 전 구역을 스캔한 후 최초 지점으로 돌아오고 스택은 제로가 되며 알고리즘이 종료됨.
 
-! x, y 좌표가 모두 홀수인 칸에서 오른쪽 혹은 아래 둘 중 하나를 뚫는 알고리즘 !
+! x, y 좌표가 모두 홀수인 칸에서 모든 방향을 뚫는 알고리즘 !
 
 */
 
@@ -71,7 +71,7 @@ function initialize(){
 	
 	cx = 0; cy = 1;
 	ctx.fillStyle = "red";
-	ctx.fillRect(cx*gs, cy*gs, gs, gs); // 빨간 점 위치 상시 바뀜
+	ctx.fillRect(cx*gs, cy*gs, gs, gs); // 맨 처음 빨간 점 위치
 	
 }
 
@@ -105,7 +105,7 @@ function keyPush(evt){
 		ctx.fillRect(cx*gs, cy*gs, gs, gs);
 		ctx.fillStyle="white";
 		ctx.fillRect((cx-xv)*gs, (cy-yv)*gs, gs, gs);
-		document.getElementById("text").innerHTML = "cx: " + cx + " cy: " + cy; // element 안의 HTML이나 XML 가져옴
+		document.getElementById("text").innerHTML = "cx: " + cx + " cy: " + cy; // element 안의 HTML이나 XML 가져옴, 웹 상에 좌표 나타내줌
 
         /* 
          * 도착 지점에 도달했을 때, "You Win!"이라는 경고 메시지 생성, 게임 리셋
@@ -135,7 +135,7 @@ function randomMazeGenerator(){
      * 길이 막혔을 때, 안 막혔을 때의 함수 호출
      */
 
-    // while(stack.length > 0) {}
+    // while(stack.length > 0) { 이 안에 코드 넣으시오. }
 
 		
 }
