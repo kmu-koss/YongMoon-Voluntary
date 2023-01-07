@@ -108,7 +108,7 @@ const changeIMG = (answer) => { // randomNumber로부터 정해진 answer, 즉 �
 const randomNumber = (n, m) => { // n부터 m까지의 랜덤한 숫자를 만드는 난수 발생 함수를 만드세요! return 타입은 INT입니다!
 	/* 
      * n에는 시작 값이 들어오고, m에는 끝 값이 들어오게 되며
-     * n~m까지의 난수를 발생시키는 random 함수를 만드세요!
+     * n~m까지의 난수를 발생시키는 random 함수를 만드세요! (Tip. 2일차 JavaScript 기초 파일의 27페이지를 확인해보세요!)
      * return 타입은 정수 타입인 INT입니다!
      */
 };
