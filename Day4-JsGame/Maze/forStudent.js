@@ -21,9 +21,9 @@ var px = py = 1; // 0 < =  px,py < tc
 var xv = yv = 0;
 var tracker;
 var stack;
-var stucked;
+var stucked; // 뜻 :  갇힌, 타입 : true, false
 
-var cx, cy; 
+var cx, cy; // 상시 바뀌는 나의 현재 
 
 window.onload = function(){
 	canv = document.getElementById("maze");	// 미로 캔버스
@@ -107,7 +107,7 @@ function keyPush(evt){
 		document.getElementById("text").innerHTML = "cx: " + cx + " cy: " + cy; // element 안의 HTML이나 XML 가져옴, 웹 상에 좌표 나타내줌
 
         /* 
-         * 도착 지점에 도달했을 때, "You Win!"이라는 경고 메시지 생성, 게임 리셋
+         * 현재 위치 좌표와 도착 지점의 좌표를 비교하여 도착 지점에 도달했을 때, "You Win!"이라는 경고 메시지 생성, 게임 리셋
          */
 	}
 		
@@ -130,11 +130,15 @@ function make2DArray(){
 
 function randomMazeGenerator(){
 
+	
     /*
      * 길이 막혔을 때, 안 막혔을 때의 함수 호출
      */
 
-    // while(stack.length > 0) { 이 안에 코드 넣으시오. }
+    while(stack.length > 0) { 
+	    
+	    // 여기에 채워넣어 코드를 완성하세요!
+    }
 
 		
 }
