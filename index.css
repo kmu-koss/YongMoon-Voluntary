@@ -7,7 +7,7 @@ body {
     width: 100%;
     height: 100vh;
     position: relative;
-    background-image: url(https://images.unsplash.com/photo-1446771326090-d910bfaf00f6?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=9216e1a8598a8530ce329b41a8f3725d);
+    background-image: url(background.png);
     background-size: cover;
     background-position: center center;
 }
