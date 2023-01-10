@@ -8,24 +8,53 @@
     <title>이벤트란</title>
   </head>
   <body>
-    <main>
-      <div class="grp">
-        <h2>누르면 alert가 나오는 버튼</h2>
+    <article>
+      <div class="problem">
+        <h1>누르면 alert가 나오는 버튼</h1>
         <!-- 이벤트 객체 -->
         <input type="button" value="버튼" />
       </div>
-    </main>
+      <div class="desc">
+        <p>오늘 진행할 실습에서는 이벤트 처리에 대해 배울거에요.</p>
+        <p>
+          이벤트가 일어나는 <strong>이벤트 객체</strong>를 javascript에서
+          선택하고, <strong>이벤트를 처리할 이벤트 핸들러</strong>를 구현하고,
+          이 둘을 <strong>addEventListener</strong>로 연결시켜주는 작업을 해볼
+          겁니다.
+        </p>
+        <br />
+        <p>이 예제에서</p>
+        <p>
+          <i>&lt;input type="button" value="버튼"&gt;</i>이 클릭 이벤트가 발생할
+          <strong>이벤트 객체</strong>
+        </p>
+        <p>
+          <i>alert_()</i>가 클릭시 작동할 함수. 즉,
+          <strong>이벤트 핸들러입니다.</strong>
+        </p>
+        <br />
+      </div>
+
+      <div class="object">
+        <h2>목표!</h2>
+        <p>
+          이벤트 핸들러인 alert_() 함수를 완성하고 이를 이벤트 객체와
+          연결해봅시다!
+        </p>
+        <p>완성하면 저 버튼을 클릭할 때마다 "click"이라고 경고창이 뜰거에요.</p>
+      </div>
+    </article>
   </body>
   <script>
     // 이벤트 객체
     const inputBtn = document.querySelector("input");
-    
+
     // 이벤트 핸들러
     function alert_() {
-      alert("click");
+      // "click"이라고 하는 경고창이 뜨도록 구현해주세요!
     }
 
-    // 이벤트 객체와 이벤트 핸들러를 연결
-    inputBtn.addEventListener("click", alert_);
+    // 이벤트 객체.addEventListener(이벤트 타입, 이벤트 핸들러);
+    // 이 줄에서 이벤트 객체와 이벤트 핸들러를 연결해주세요!
   </script>
 </html>

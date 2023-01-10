@@ -5,33 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <title>Document</title>
+    <title>낮밤 바꾸기</title>
   </head>
   <body>
     <div class="main">
-      <img class="sphere" src="./sun.png" />
+      <img class="sphere" src="./sun.png" width="30%"/>
       <button class="switchBtn">night</button>
     </div>
   </body>
   <script>
-    let state = "day";
     const sky = document.querySelector("body");
     const sphere = document.querySelector(".sphere");
     const switchBtn = document.querySelector(".switchBtn");
+
+    // 현재 상태가 낮인지 밤인지를 나타내는 변수
+    let state = "day";
+    
+    // 낮일 땐 해가 떠있고, 하늘이 파랗고(#00e1ff), 버튼에는 night라고 써져있습니다.
+    // 밤일 땐 달이 떠있고, 하늘이 어둡고(#404040), 버튼에는 day라고 써져있습니다.
     function switchclick() {
       if (state === "day") {
-        state = "night";
-        sphere.src = "./moon.png";
-        sky.style.background = "#404040";
+        // 내용을 채워주세요!
       } else {
-        state = "day";
-        sphere.src = "./sun.png";
-        sky.style.background = "#00e1ff";
+        // 내용을 채워주세요!
       }
-      sphere.innerText = state;
-      switchBtn.innerText = state;
+      // 내용을 채워주세요!
       console.log(state);
     }
+    // switchBtn을 클릭하면 switchclick() 함수가 실행됩니다.
     switchBtn.addEventListener("click", switchclick);
   </script>
 </html>
