@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>별*로 피라미드 짓기</title>
+  </head>
+  <body>
+    <main>
+      <input class="input" type="text" placeholder="원하는 피라미드 층수" />
+      <input class="submit" type="button" value="submit" />
+      <div class="result"></div>
+      <p>힌트: "*".repeat(5) -> "*****"</p>
+    </main>
+  </body>
+  <script>
+    // querySelector() 안에 알맞은 값을 넣어주세요.
+    const input = document.querySelector(".input");
+    const result = document.querySelector(".result");
+
+    function submit() {
+      // 입력된 값을 n에 저장
+      let n = input.value;
+      // 출력된 결과값 초기화
+      result.innerHTML = "";
+
+      // 함수를 구현해주세요!
+      for (let i = 0; i < n; i++) {
+        result.innerHTML += "*".repeat(i) + "<br>";
+      }
+    }
+    const submitBtn = document.querySelector(".submit");
+    submitBtn.addEventListener("click", submit);
+  </script>
+</html>
