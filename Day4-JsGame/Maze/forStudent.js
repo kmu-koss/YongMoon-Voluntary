@@ -36,7 +36,7 @@ window.onload = function(){
 // enter 키를 눌렀다가 땠을 때 이벤트
 function enterkey() {
     if (window.event.keyCode == 13) { // enter 키의 아스키 코드 : 13, 엔터를 누르면
-	var sizeInput = document.getElementById("mazeSize").value; // "mazeSize"라는 Id의 value값 찾기
+	var sizeInput = document.getElementById("mazeSize").value; // 미로 사이즈, "mazeSize"라는 Id의 value값 찾기
 	    
 	// 여기에 채워넣어 코드를 완성하세요!
         /*
