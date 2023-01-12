@@ -24,8 +24,7 @@
 ### 4일차(1/12):
 
     - JavaScript 게임 개발
-
-[목표](https://kmu-koss.github.io/YongMoon-Voluntary/)
+    
 
 ## 🧑‍🏫 멘토 구성원
 
