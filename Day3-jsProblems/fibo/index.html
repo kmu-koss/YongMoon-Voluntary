@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>피보나치 수열</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <article>
+      <div class="problem">
+        <h1>n을 입력하면 피보나치 수열의 n번째 항이 나오는 입력창</h1>
+        <input
+          class="inputN"
+          type="text"
+          placeholder="n의 값을 입력해주세요."
+        />
+        <input class="submitBtn" type="submit" value="submit" />
+        <h2 id="result"></h2>
+      </div>
+      <div class="desc">
+        <p>피보나치 수열은 이전 두 항의 합을 n번째 항으로 갖는 수열이에요.</p>
+        <p><strong>0 1 1 2 3 5 8 13 ...</strong> 이런 식으로 이어지죠.</p>
+        <p>근데 첫번째와 두번째 수열은 자신 이전 항의 개수가 2개가 안돼요. 그럼 앞에서 말했던 이전 두 항의 합으로 구할 수 없겠네요.</p>
+        <p>그러니 이 두 경우만 예외로 둬서 첫번째 항은 0, 두번째 항은 1이 되도록 만들어야겠어요.</p>
+        <p>머리가 복잡하죠? 안 풀린다고 너무 상심하지 마세요. </p>
+      </div>
+      <div class="object">
+        <h2>목표!</h2>
+        <p>app.js에 있는 fibo() 함수를 구현하세요!</p>
+      </div>
+    </article>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
