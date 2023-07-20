@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>MY Web</title>
+    <link rel="stylesheet" href="index.css"/>
+    <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+    <div id="quiz">
+
+        <p> 1. 다음 중 내가 가장 좋아하는 색깔은?</p>
+        <form name="form">
+            <input type="radio" name="colorName" value="v1">빨강<br>
+            <input type="radio" name="colorName" value="v2">노랑<br>
+            <input type="radio" name="colorName" value="v3">초록<br>
+            <input type="radio" name="colorName" value="v4">파랑<br>
+            <input type="button" name="선택" value="정답확인" onclick="checkAnswer()">
+        </form>
+        <p id="check"></p>
+        <script type="text/javascript">
+            function checkAnswer() {
+                if (form.colorName[0].checked == true) document.getElementById("check").innerHTML = "정답입니다.";
+                else document.getElementById("check").innerHTML = "오답입니다.";
+            }
+        </script>
+    </div>
+</body>
+</html>

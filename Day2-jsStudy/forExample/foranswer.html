@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        div{
+            border: 1px solid blue;
+            padding:10px;
+            width: 200px;
+            line-height: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var num = parseInt(prompt("출력할 구구단의 숫자를 입력"));
+        document.write("<div>");
+        for(var i = 1; i <= 9; i++){
+            document.write(num + "*" + i + "=" + (num * i) + "<br>");
+        }
+        document.write("</div>");
+    </script>
+</body>
+</html>
