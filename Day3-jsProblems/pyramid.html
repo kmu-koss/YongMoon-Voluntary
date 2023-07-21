@@ -6,6 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>별*로 피라미드 짓기</title>
+
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+      }
+
+      main {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+      }
+
+      main input {
+          margin: 10px;
+      }
+    </style>
+
   </head>
   <body>
     <main>
@@ -27,7 +52,7 @@
       result.innerHTML = "";
 
       // 함수를 구현해주세요!
-      for (let i = 0; i < n; i++) {
+      for (let i = 1; i <= n; i++) {
         result.innerHTML += "*".repeat(i) + "<br>";
       }
     }

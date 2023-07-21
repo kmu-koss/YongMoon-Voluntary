@@ -4,8 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
     <title>낮밤 바꾸기</title>
+
+    <style>
+      html {
+      margin: 0;
+      padding: 0;
+      }
+
+      body{
+          margin: 0;
+          background-color: #00e1ff;
+          width: 100vw;
+          height: 100vh;
+      }
+
+      .main {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+      }
+    </style>
+
   </head>
   <body>
     <div class="main">
@@ -25,9 +48,15 @@
     // 밤일 땐 달이 떠있고, 하늘이 어둡고(#404040), 버튼에는 day라고 써져있습니다.
     function switchclick() {
       if (state === "day") {
-        // 내용을 채워주세요!
+        state = "night"
+        sphere.src = './moon.png'
+        switchBtn.innerText = 'day'
+        sky.style.backgroundColor = "#404040"
       } else {
-        // 내용을 채워주세요!
+        state = "day"
+        sphere.src = './sun.png'
+        switchBtn.innerText = 'night'
+        sky.style.backgroundColor = "#00e1ff"
       }
       // 내용을 채워주세요!
       console.log(state);
