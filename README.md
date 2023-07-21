@@ -36,6 +36,8 @@
     <td align="center"><a href="https://github.com/kmu-hyunwoo"><img src="https://avatars.githubusercontent.com/u/126188520?v=4" width="100px;" alt=""/><br /><sub><b>조현우</b></sub></a><br /><a href="https://github.com/kmu-hyunwoo" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/inqueue0979"><img src="https://avatars.githubusercontent.com/u/69336138?v=4" width="100px;" alt=""/><br /><sub><b>조원재</b></sub></a><br /><a href="https://github.com/inqueue0979" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/jooya38"><img src="https://avatars.githubusercontent.com/u/107492177?v=4" width="100px;" alt=""/><br /><sub><b>황연주</b></sub></a><br /><a href="https://github.com/jooya38" title="Code">💻</a></td>
+  </tr>
+  <tr>
     <td align="center"><a href="https://github.com/nnyouung"><img src="https://avatars.githubusercontent.com/u/104901660?v=4" width="100px;" alt=""/><br /><sub><b>하은영</b></sub></a><br /><a href="https://github.com/nnyouung" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/daeheejang"><img src="https://avatars.githubusercontent.com/u/84303422?v=4" width="100px;" alt=""/><br /><sub><b>장대희</b></sub></a><br /><a href="https://github.com/daeheejang" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/jhj04"><img src="https://avatars.githubusercontent.com/u/129846546?v=4" width="100px;" alt=""/><br /><sub><b>정현주</b></sub></a><br /><a href="https://github.com/jhj04" title="Code">💻</a></td>
