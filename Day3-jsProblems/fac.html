@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        }        
+      article {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+      article .problem {margin: 50px;}
+      article .desc {margin: 50px;}
+      article .object {margin: 50px;}
+
+    </style>
+    <title>팩토리얼 연산</title>
+    <meta charset="utf-8">
+  
+</head>
+
+<body>    
+    <article>
+          <div class="problem">
+            <h1>n을 입력하면 1부터 n까지 다 곱한 값이 나오는 입력창</h1>
+            <input
+              class="inputN"
+              type="text"
+              placeholder="n의 값을 입력해주세요."
+            />
+            <input class="submitBtn" type="submit" value="submit" />
+            <h3 id="result">결과: </h3>
+          </div>
+          <div class="desc">
+            <p><strong>n! = 1 x 2 x 3 x 4 x ... x n</strong>을 구하는 문제에요.</p>
+            <p><strong>참고로,</strong> "||" 는 "또는" 이라는 의미입니다!</p>
+          </div>
+          <div class="object">
+            <h2>목표!</h2>
+            <p>fac.js에 있는 factorial() 함수를 구현하세요!</p>
+          </div>
+        </article>
+        <script>
+          const input = document.querySelector(".inputN");
+          const submitBtn = document.querySelector(".submitBtn");
+
+          function factorial(n) {
+            //1부터 n까지 수를 모두 곱하는 함수를 구현하세요!
+            //n이 0이거나, 1일 경우 1을 반환하고, 나머지의 경우 팩토리얼 값을 반환합니다!
+            
+          }
+  
+          // submit 버튼을 누르면 실행될 함수에요.
+          function submit() {
+          // 입력창에 있는 값을 n에 저장해요.
+            let n = parseInt(input.value);
+          // 결과값을 출력해요.
+            document.querySelector("#result").innerHTML = "결과: " + factorial(n);
+            }
+          // submitBtn을 클릭하면 submit() 함수가 실행됩니다.
+            submitBtn.addEventListener("click", submit);
+        </script>
+      </body>
+  </div>
+  
+</body>

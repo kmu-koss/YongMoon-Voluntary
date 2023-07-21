@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        }        
+      article {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+      article .problem {margin: 50px;}
+      article .desc {margin: 50px;}
+      article .object {margin: 50px;}
+
+    </style>
+    <title>최대값, 최소값</title>
+    <meta charset="utf-8">
+  
+</head>
+
+<body>
+    
+  <article>
+    <div class="problem">
+      <h1>배열 속 숫자들 중 최대값과 최소값을 구하기</h1>
+      <h4>
+        배열에 들어갈 숫자들을 띄어쓰기를 기준으로 나눠주세요. 
+        <br>
+        예) 1 2 3 4
+      </h4>
+      <input class="inputN" type="text" placeholder="숫자를 입력해주세요." />
+      <input class="submitBtn" type="submit" value="submit" />
+      <h3 id="max">최소값:</h3>
+      <h3 id="min">최대값:</h3>
+    </div>
+    <div class="desc">
+      <p>
+        여러 정수 중에서 최대값을 알고 싶다면, 정수를 하나씩 원래 최대값과
+        비교해서 그 정수가 최대값보다 크다면 최대값을 그 정수 값으로
+        갱신시켜서 구할 수 있을거에요.
+        <strong>참고로,</strong> 
+        for...of 문을 통해 값을 가져올 수 있고,
+        for...in 문을 통해 인덱스값을 가져올 수 있어요!
+      </p>
+      <p>
+        그렇다면 반대의 경우도 마찬가지겠죠? 그럼 초기의 최소값은 배열에 있는
+        어떤 정수보다도 크고, 초기의 최대값은 어떤 정수보다도 작아야 할거에요.
+      </p>
+      <p>
+        자바스크립트는 마침 Infinity라는 상수를 지원해요. 어떤 수보다도 큰
+        값을 가졌어요. 앞에 -를 붙이면 반대겠네요.
+      </p>
+      <p>
+        자바스크립트에는 자체적으로 배열을 정렬해주는 함수를 가지고 있지만
+        우리는 쓰지 않을거에요.<br />
+        오늘 배울 내용은 자바스크립트가 가지고 있는 내장 함수가 아니라
+        자바스크립트를 여러분이 자유자재로 사용하는 방법이니까요.
+      </p>
+    </div>
+    <div class="object">
+      <h2>목표!</h2>
+      <p>maxmin.js에 있는 minmax() 함수를 구현하세요!</p>
+    </div>
+  </article>
+  <script>
+    const input = document.querySelector(".inputN");
+    const submitBtn = document.querySelector(".submitBtn");
+
+    function minmax(arr) {
+      let max = -Infinity;
+      let min = Infinity;
+
+      // 함수를 구현하세요!
+
+      
+    }
+
+    function submit() {
+      let arr = input.value.split(" ").map((n) => Number(n));
+      // 콘솔창에서 함수의 실행결과를 확인할 수 있어요.
+      console.log(minmax(arr));
+
+      let min = minmax(arr)[0];
+      let max = minmax(arr)[1];
+
+      // 결과값을 출력해요.
+      document.querySelector("#min").innerText = "최소값: " + min;
+      document.querySelector("#max").innerText = "최대값: " + max;
+    }
+    // submitBtn을 클릭하면 submit() 함수가 실행됩니다.
+    submitBtn.addEventListener("click", submit);
+
+  </script>
+</body>
+</html>
