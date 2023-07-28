@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>학력 정보 등록하기</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .education-form {
+      margin-bottom: 10px;
+    }
+
+    .education-form input[type="text"] {
+      width: 200px;
+      margin-right: 10px;
+    }
+
+    #education-list {
+      list-style-type: none;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>학력 정보 등록하기</h1>
+
+  <form id="education-form" class="education-form">
+    <input type="text" id="school-input" placeholder="학교">
+    <input type="text" id="degree-input" placeholder="학위/학점">
+    <button type="button" onclick="addEducation()">등록</button>
+  </form>
+
+  <ul id="education-list"></ul>
+
+  <script>
+    function addEducation() {
+      var schoolInput = document.getElementById("school-input").value;
+      var degreeInput = document.getElementById("degree-input").value;
+
+      if (schoolInput && degreeInput) {
+        var educationItem = document.createElement("li");
+        educationItem.textContent = schoolInput + " - " + degreeInput;
+        
+        document.getElementById("education-list").appendChild(educationItem);
+
+        document.getElementById("school-input").value = "";
+        document.getElementById("degree-input").value = "";
+
+        alert("학력 정보가 등록되었습니다.");
+      } else {
+        alert("학력 정보를 모두 입력해주세요.");
+      }
+    }
+  </script>
+</body>
+</html>
